@@ -1,53 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Projects Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <main class="portfolio">
-    <header class="header">
-      <div class="headerBox">
-        <h1>William Peel</h1>
-      </div>
+
+    <header>
+
     </header>
 
-    <section class="socials">
-      <a href="https://github.com/willpeely" target="_blank">Github</a>
-      <a href="https://www.linkedin.com/in/-william-peel-/" target="_blank">LinkedIn</a>
-    </section>
+    <main>
 
-    <section class="mainContent">
-      <div class = "projectsContainer">
-        <ul>
-          <li>
-            <section class="project">
-              <h2>Neural Network Image Classification</h2>
-              <p>Convolutional Neural Network (CNN) model built with PyTorch to classify images in the CIFAR10 dataset, achieving 88% accuracy.</p>
-              <a href=https://willpeely.github.io/Neural-Network-Classifier/ target="_blank">Visit Project</a>
-          </section>
-        </li>
+        <section class="card" id="about-card">
+            <h1>Will Peel - Portfolio</h1>
+            <p>
+                I'm Will, a Computer Science undergraduate at the University of York, passionate about building intelligent systems, designing efficient software, and creating interactive digital experiences. 
+                With a strong foundation in mathematics, computer science, and software engineering, I enjoy solving complex problems through innovative and data-driven approaches.
+                <br><br>
+                My experience spans machine learning, data science, and software development. 
+                I have built a convolutional neural network to classify CIFAR-10 images with 88% test accuracy, developed a data-driven patient analysis project achieving high predictive accuracy, and designed a responsive, multi-page courier website with a robust Node.js backend.
+                <br><br>
+                I also have hands-on experience in game development and interactive systems, implementing AI behaviours and data-driven mechanics in Unity, and contributing to team-based software projects following structured development lifecycles.
+                <br><br>
+                I thrive in collaborative environments, combining logical problem-solving with creativity to deliver projects that are both technically robust and user-focused. 
+                I am eager to leverage my skills in machine learning, software engineering, and interactive technologies to build impactful solutions.
+            </p>
 
-          <li>
-            <section class="project">
-              <h2>Data Project on NHS-style Database</h2>
-              <p>This project focuses on exploring and visualizing data from an NHS-style database, utilizing Python libraries such as Pandas, and Matplotlib.</p>
-              <a href="https://willpeely.github.io/Data-Project/" target="_blank">Visit Project</a>
-            </section>
-          </li>
+            <h2>Programming Languages</h2>
 
-          <li>
-            <section class="project">
-              <h2>Memory Game</h2>
-              <p>A simple memory game built with JavaScript, HTML, and CSS. The main goal of this project is to enhance cognitive skills by challenging users to remember the number of coloured tiles.</p>
-              <a href="https://willpeely.github.io/Memory-Game/" target="_blank">Visit Project</a>
-            </section>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </main>
+            <ul class="tech-list">
+                <li class="tech accent">HTML</li>
+                <li class="tech accent-2">CSS</li>
+                <li class="tech accent">JavaScript</li>
+                <li class="tech accent-2">Python</li>
+                <li class="tech accent">C#</li>
+                <li class="tech accent-2">Java</li>
+                <li class="tech accent">Unity</li>
+            </ul>
+        </section>
+
+        <section id="projects-container">
+            <div class="card" id="project-card">
+                <div class="project-content">
+                    <img src="icons/graph.png">
+                    <h2>Neural Network Classifier</h2>
+
+                    <ul class="tech-list">
+                        <li class="tech accent">PyTorch</li>
+                        <li class="tech accent-2">CNN</li>
+                        <li class="tech accent">ReLu</li>
+                    </ul>
+
+                    <p class="project-details">
+                        Built a convolutional neural network (CNN) using PyTorch to classify images in the CIFAR-10 dataset, achieving 88% test accuracy.
+                        Designed a deep learning architecture with 5 convolutional layers, 2 fully connected layers, batch normalization, dropout, and ReLU activations to optimize generalization. 
+                        Implemented a robust training pipeline with data augmentation, learning rate scheduling, and regularization techniques to prevent overfitting and ensure high model performance.
+                    </p>
+                </div>
+
+                
+                <a href=https://willpeely.github.io/Neural-Network-Classifier/ class="project-link">View Project</a>
+
+            </div>
+
+            <div class="card" id="project-card">
+                <div class="project-content">
+                    <img src="icons/bar-chart.png">
+                    <h2>NHS-style Data Project</h2>
+
+                    <ul class="tech-list">
+                        <li class="tech accent">Pandas</li>
+                        <li class="tech accent-2">Numpy</li>
+                        <li class="tech accent">Seaborn</li>
+                        <li class="tech accent-2">Scikit-learn</li>
+                        <li class="tech accent">SQLite3</li>
+                    </ul>
+
+                    <p class="project-details">
+                        Conducted domain analysis on an NHS-style database to identify key areas of investigation and improve data quality.
+                        Normalized and merged tables using SQL and Pandas to enhance integrity, then applied k-means clustering to group patients by health risk.
+                        Engineered features to improve cluster separation and built a logistic regression model to predict appointment cancellations, achieving 94% accuracy and 91% recall on cancelled cases. 
+                        Presented insights with clear graphical visualizations using Matplotlib to communicate findings effectively.
+                    </p>
+                </div>
+                
+
+                <a href="https://willpeely.github.io/Data-Project/" class="project-link">View Project</a>
+
+            </div>
+
+            <div class="card" id="project-card">
+                <div class="project-content">
+                    <img src="icons/web.png">
+                    <h2>Professional Website</h2>
+
+                    <ul class="tech-list">
+                        <li class="tech accent">SEO HTML</li>
+                        <li class="tech accent-2">Responsive CSS</li>
+                        <li class="tech accent">Node.js</li>
+                    </ul>
+
+                    <p class="project-details">
+                        Developed a responsive multi-page courier service website using HTML, CSS, and JavaScript, structured with accessible semantic HTML for SEO and screen-reader compatibility. 
+                        Implemented a Node.js and Express.js backend to handle booking form submissions and automatically send email notifications, improving customer communication and operational efficiency.
+                        Enhanced user experience by using the Fetch API to asynchronously submit form data without page reloads.                    
+                    </p>
+                </div>
+                
+
+                <a href="https://willpeely.github.io/sp7logistics/" class="project-link">View Project</a>
+
+            </div>
+        </section>
+    </main>
+    
 </body>
+</html>
