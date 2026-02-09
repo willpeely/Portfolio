@@ -4,121 +4,262 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="portfolio-style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
-
+        <div class="banner"?>
+            <h1>William Peel
+            </h1>
+            <p>
+                Computer Science undergraduate at the University of York, currently achieving a First.
+                <br><br>
+                Technically versatile, adaptable, and quick to learn, with strong communication skills.
+                <br><br>
+                Motivated by goals that deliver meaningful, real-world impact.
+            </p>
+        </div>
     </header>
 
     <main>
 
-        <section class="card" id="about-card">
-            <h1>Will Peel - Portfolio</h1>
-            <p>
-                I'm Will, a Computer Science undergraduate at the University of York, passionate about building intelligent systems, designing efficient software, and creating interactive digital experiences. 
-                With a strong foundation in mathematics, computer science, and software engineering, I enjoy solving complex problems through innovative and data-driven approaches.
-                <br><br>
-                My experience spans machine learning, data science, and software development. 
-                I have built a convolutional neural network to classify CIFAR-10 images with 88% test accuracy, developed a data-driven patient analysis project achieving high predictive accuracy, and designed a responsive, multi-page courier website with a robust Node.js backend.
-                <br><br>
-                I also have hands-on experience in game development and interactive systems, implementing AI behaviours and data-driven mechanics in Unity, and contributing to team-based software projects following structured development lifecycles.
-                <br><br>
-                I thrive in collaborative environments, combining logical problem-solving with creativity to deliver projects that are both technically robust and user-focused. 
-                I am eager to leverage my skills in machine learning, software engineering, and interactive technologies to build impactful solutions.
-            </p>
+        <section class="segment" id="experience">
 
-            <h2>Programming Languages</h2>
+            <header class="segment-title">
+                <h1>Experience</h1>
+                <h2>My personal and academic projects.</h2>
+            </header>
+            
+            <div class="segment-grid" id="experience-grid">
 
-            <ul class="tech-list">
-                <li class="tech accent">HTML</li>
-                <li class="tech accent-2">CSS</li>
-                <li class="tech accent">JavaScript</li>
-                <li class="tech accent-2">Python</li>
-                <li class="tech accent">C#</li>
-                <li class="tech accent-2">Java</li>
-                <li class="tech accent">Unity</li>
-            </ul>
+                <article class="segment-cell" id="neural-network-classifier">
+
+                    <div class="segment-cell-icon"><img src="icons/brain.png"></div>
+
+                    <div class="segment-cell-header"><h2>Machine Learning & AI</h2></div>
+        
+                    
+                    
+                    <div class="segment-cell-description">
+                        <p>
+                            Built a convolutional neural network (CNN) using PyTorch to classify images in the CIFAR-10 dataset, achieving 88% test accuracy. 
+                            <br><br>
+                            Designed a deep learning architecture with batch normalization, dropout, and ReLU activations to optimize generalization. 
+                            <br><br>
+                            Implemented a robust training pipeline with data augmentation, learning rate scheduling, and regularization techniques to prevent overfitting.
+                        </p>
+                    </div>   
+                    
+                    <div class="segment-cell-link">
+                        <a href=https://willpeely.github.io/Neural-Network-Classifier/ >View Project</a>
+                    </div>
+                </article>
+
+                <article class="segment-cell" id="NHS-database-segment-cell">
+                    
+                    <div class="segment-cell-icon">
+                        <img src="icons/bar-chart.png">
+                    </div>
+
+                    <div class="segment-cell-header">
+                        <h2>Data Engineering & Analysis</h2>
+                    </div>
+
+                    <div class="segment-cell-description">
+                        <p>
+                            Conducted domain analysis on an NHS-style database to identify key areas of investigation and improve data quality. 
+                            <br><br>
+                            Built a logistic regression model to predict appointment cancellations, achieving 94% accuracy and 91% recall on cancelled cases.
+                            <br><br>
+                            Presented insights with clear graphical visualizations using Matplotlib to communicate findings effectively.
+                        </p>
+                    </div>
+
+                    
+                    <div class="segment-cell-link">
+                        <a href=https://willpeely.github.io/Data-Project>View Project</a>
+                    </div>
+                    
+                </article>
+
+                <article class="segment-cell" id="professional-website">
+
+                    <div class="segment-cell-icon">
+                        <img src="icons/web.png">
+                    </div>
+
+                    <div class="segment-cell-header">
+                        <h2>Web Development</h2>
+                    </div>
+
+                    
+
+                    <div class="segment-cell-description">
+                        <p>
+                            Developed a responsive multi-page courier service website using HTML, CSS, and JavaScript. 
+                            <br><br>
+                            Implemented a Node.js and Express.js backend to handle booking form submissions, improving customer communication and operational efficiency.
+                            <br><br>
+                            Enhanced user experience by using the Fetch API to asynchronously submit form data without page reloads.
+                        </p>
+                    </div>
+
+                    
+
+                    <div class="segment-cell-link">
+                        <a href=https://willpeely.github.io/sp7logistics>View Project</a>
+                    </div>
+                    
+                </article>
+
+                <article class="segment-cell" id="unity">
+
+                    <div class="segment-cell-icon">
+                        <img src="icons/gamepad.png">
+                    </div>
+
+                    <div class="segment-cell-header">
+                        <h2>Game Development</h2>
+                    </div>
+
+                    <div class="segment-cell-description">
+                        <p>
+                            Independently designed and developed multiple game projects, managing the full lifecycle from concept and planning through iteration and delivery.
+                            <br><br>
+                            Evaluated trade-offs between creative ambition, technical feasibility, and timelines, ensuring projects stayed achievable and high-quality.
+                            <br><br>
+                            Conducted regular playtesting and user feedback analysis to inform design decisions and prioritise iteration improvements.
+                        </p>
+                    </div>
+
+                
+                </article>
+            </div>
         </section>
 
-        <section id="projects-container">
-            <div class="card" id="project-card">
-                <div class="project-content">
-                    <img src="icons/graph.png">
-                    <h2>Neural Network Classifier</h2>
+        <section class="segment" id="skills">
 
-                    <ul class="tech-list">
-                        <li class="tech accent">PyTorch</li>
-                        <li class="tech accent-2">CNN</li>
-                        <li class="tech accent">ReLu</li>
-                    </ul>
+            <header class="segment-title">
+                <h1>Skills</h1>
+                <h2>Key abilities and strengths developed through my experiences.</h2>
+            </header>
 
-                    <p class="project-details">
-                        Built a convolutional neural network (CNN) using PyTorch to classify images in the CIFAR-10 dataset, achieving 88% test accuracy.
-                        Designed a deep learning architecture with 5 convolutional layers, 2 fully connected layers, batch normalization, dropout, and ReLU activations to optimize generalization. 
-                        Implemented a robust training pipeline with data augmentation, learning rate scheduling, and regularization techniques to prevent overfitting and ensure high model performance.
-                    </p>
-                </div>
+            <div class="segment-grid" id="skills-grid">
+                <article class="segment-cell" id="techincal">
 
-                
-                <a href=https://willpeely.github.io/Neural-Network-Classifier/ class="project-link">View Project</a>
+                    <div class="segment-cell-icon">
+                        <img src="icons/tech.png">
+                    </div>
 
-            </div>
+                    <div class="segment-cell-header">
+                        <h2>Technical Versatility</h2>
+                    </div>
 
-            <div class="card" id="project-card">
-                <div class="project-content">
-                    <img src="icons/bar-chart.png">
-                    <h2>NHS-style Data Project</h2>
+                    <div class="segment-cell-description">
+                        <p>
+                            <span class="skill">Programming</span>
+                            <br>Competent in several lanuages including Python, C#, HTML, CSS, JavaScript, Java.
+                            <br><br>
+                            <span class="skill">Software Engineering Fundamentals</span>
+                            <br>Software development lifecycle, version control, testing, debgugging.
+                            <br><br>
+                            <span class="skill">End-to-End Development</span>
+                            <br>Design, development, testing, and implementation of software solutions.
+                        </p>
+                    </div>
+                </article>
 
-                    <ul class="tech-list">
-                        <li class="tech accent">Pandas</li>
-                        <li class="tech accent-2">Numpy</li>
-                        <li class="tech accent">Seaborn</li>
-                        <li class="tech accent-2">Scikit-learn</li>
-                        <li class="tech accent">SQLite3</li>
-                    </ul>
+                <article class="segment-cell" id="mindset">
 
-                    <p class="project-details">
-                        Conducted domain analysis on an NHS-style database to identify key areas of investigation and improve data quality.
-                        Normalized and merged tables using SQL and Pandas to enhance integrity, then applied k-means clustering to group patients by health risk.
-                        Engineered features to improve cluster separation and built a logistic regression model to predict appointment cancellations, achieving 94% accuracy and 91% recall on cancelled cases. 
-                        Presented insights with clear graphical visualizations using Matplotlib to communicate findings effectively.
-                    </p>
-                </div>
-                
+                    <div class="segment-cell-icon">
+                        <img src="icons/mindset.png">
+                    </div>
 
-                <a href="https://willpeely.github.io/Data-Project/" class="project-link">View Project</a>
+                    <div class="segment-cell-header">
+                        <h2>Engineering Mindset</h2>
+                    </div>
 
-            </div>
+                    <div class="segment-cell-description">
+                        <p>
+                            <span class="skill">Problem Solving & Judgement</span>
+                            <br>Combine both creative and logical approaches backed by a strong intuition to break down complex problems.
+                            <br><br>
+                            <span class="skill">Rapid Learning</span>
+                            <br>Picking up and applying new languages, skills, and technologies quickly.
+                            <br><br>
+                            <span class="skill">Adaptability & Initiative</span>
+                            <br>Thriving under pressure and fast-paced environments, and taking ownership of tasks.
+                        </p>
+                    </div>
+                </article>
 
-            <div class="card" id="project-card">
-                <div class="project-content">
-                    <img src="icons/web.png">
-                    <h2>Professional Website</h2>
+                <article class="segment-cell" id="collaboration">
 
-                    <ul class="tech-list">
-                        <li class="tech accent">SEO HTML</li>
-                        <li class="tech accent-2">Responsive CSS</li>
-                        <li class="tech accent">Node.js</li>
-                    </ul>
+                    <div class="segment-cell-icon">
+                        <img src="icons/team.png">
+                    </div>
 
-                    <p class="project-details">
-                        Developed a responsive multi-page courier service website using HTML, CSS, and JavaScript, structured with accessible semantic HTML for SEO and screen-reader compatibility. 
-                        Implemented a Node.js and Express.js backend to handle booking form submissions and automatically send email notifications, improving customer communication and operational efficiency.
-                        Enhanced user experience by using the Fetch API to asynchronously submit form data without page reloads.                    
-                    </p>
-                </div>
-                
+                    <div class="segment-cell-header">
+                        <h2>Collaboration & Leadership</h2>
+                    </div>
 
-                <a href="https://willpeely.github.io/sp7logistics/" class="project-link">View Project</a>
+                    <div class="segment-cell-description">
+                        <p>
+                            <span class="skill">Proactivity</span>
+                            <br>Actively seek out ways to add value, anticipate challenges, and take ownership of tasks without waiting for direction.
+                            <br><br>
+                            <span class="skill">Communication</span>
+                            <br>Clearly explain ideas, share progress, and ensure mutual understanding across team members and stakeholders.
+                            <br><br>
+                            <span class="skill">Coordination</span>
+                            <br>Organise tasks, manage dependencies, and help align individual contributions toward shared goals.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="segment-cell" id="user-and-business">
+
+                    <div class="segment-cell-icon">
+                        <img src="icons/business.png">
+                    </div>
+
+                    <div class="segment-cell-header">
+                        <h2>User & Business Focus</h2>
+                    </div>
+
+                    <div class="segment-cell-description">
+                        <p>
+                            <span class="skill">User-Centred Thinking</span>
+                            <br>Consider end users and stakeholders when designing solutions, prioritising usability, clarity, and real-world impact.
+                            <br><br>
+                            <span class="skill">Requirements Awareness</span>
+                            <br>Translate high-level goals and feedback into clear, actionable tasks that guide implementation.
+                            <br><br>
+                            <span class="skill">Value-Driven Delivery</span>
+                            <br>Focus on delivering features and outcomes that provide tangible value rather than over-engineering.
+                        </p>
+                    </div>
+
+                </article>
 
             </div>
         </section>
     </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>
+                <a href="mailto:william.e.peel@gmail.com">william.e.peel@gmail.com</a> |
+                <a href="https://github.com/willpeely" target="_blank">GitHub</a> |
+                <a href="https://www.linkedin.com/in/-william-peel-" target="_blank">LinkedIn</a>
+            </p>
+        </div>
+    </footer>
+
     
 </body>
 </html>
