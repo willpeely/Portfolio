@@ -91,6 +91,14 @@ a {
   );
 }
 
+#modules-grid {
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(300px, 80%), 1fr)
+  );
+}
+
+
 .segment-cell {
   padding: 2rem;
   display: flex;
@@ -98,6 +106,11 @@ a {
   gap: 2rem;
 
   border: 3px solid var(--dark-primary);
+}
+
+#modules-grid .segment-cell {
+  text-align: center;
+  padding: 1rem;
 }
 
 .segment-cell-header h2 {
@@ -144,6 +157,7 @@ footer {
   background-color: var(--dark-primary);
   color: var(--light-primary);
   padding: 2rem 1rem;
+  margin-top: 5rem;
 }
 
 footer a {
