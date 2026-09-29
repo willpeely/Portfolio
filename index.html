@@ -3,394 +3,645 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta
+        name="description"
+        content="William Peel — Computer Science graduate and software engineer portfolio."
+    >
+    <title>William Peel</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-    <header>
-        <div class="banner"?>
-            <h1>William Peel
-            </h1>
-            <p>
-                BEng Computer Science undergraduate at the University of York, currently achieving a First.
-                <br><br>
-                Technically versatile, adaptable, and quick to learn, with strong communication skills.
-                <br><br>
-                Motivated by goals that deliver meaningful, real-world impact.
-            </p>
-        </div>
+<body>
+    <header class="site-header">
+        <nav class="nav container" aria-label="Primary navigation">
+            <a class="nav-brand" href="#top">William Peel</a>
+
+            <div class="nav-links">
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
     </header>
 
-    <main>
+    <main id="top">
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">First-Class Computer Science Graduate</p>
 
-        <section class="segment" id="experience">
+                    <h1>
+                        Striving to make a
+                        <span>real-world impact.</span>
+                    </h1>
 
-            <header class="segment-title">
-                <h1>Experience</h1>
-                <h2>My personal and academic projects.</h2>
-            </header>
-            
-            <div class="segment-grid" id="experience-grid">
+                    <p class="hero-intro">
+                        BEng Computer Science graduate from the University of York with experience across software development, data science, machine learning and user-centred design. I enjoy solving difficult problems, learning new technologies quickly and turning ideas into practical solutions.
+                    </p>
 
-                <article class="segment-cell" id="neural-network-classifier">
-
-                    <div class="segment-cell-icon"><img src="icons/brain.png"></div>
-
-                    <div class="segment-cell-header"><h2>Machine Learning & AI</h2></div>
-        
-                    
-                    
-                    <div class="segment-cell-description">
-                        <p>
-                            Built a convolutional neural network (CNN) using PyTorch to classify images in the CIFAR-10 dataset, achieving 88% test accuracy. 
-                            <br><br>
-                            Designed a deep learning architecture with batch normalization, dropout, and ReLU activations to optimize generalization. 
-                            <br><br>
-                            Implemented a robust training pipeline with data augmentation, learning rate scheduling, and regularization techniques to prevent overfitting.
-                        </p>
-                    </div>   
-                    
-                    <div class="segment-cell-link">
-                        <a href=https://willpeely.github.io/Neural-Network-Classifier/ >View Project</a>
-                    </div>
-                </article>
-
-                <article class="segment-cell" id="NHS-database-segment-cell">
-                    
-                    <div class="segment-cell-icon">
-                        <img src="icons/bar-chart.png">
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#projects">
+                            View projects
+                        </a>
+                        <a
+                            class="button button-secondary"
+                            href="https://github.com/willpeely"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            GitHub
+                        </a>
                     </div>
 
-                    <div class="segment-cell-header">
-                        <h2>Data Engineering & Analysis</h2>
+                    <div class="hero-meta" aria-label="Core interests">
                     </div>
+                </div>
 
-                    <div class="segment-cell-description">
-                        <p>
-                            Conducted domain analysis on an NHS-style database. 
-                            <br><br>
-                            Cleaned, and merged data using SQL and Pandas for efficient analysis. 
-                            <br><br>
-                            Built a logistic regression model to predict appointment cancellations, achieving 94% accuracy and 91% recall on cancelled cases.
-                            <br><br>
-                            Applied k-means clustering to successfully group patients by health risk.
-                            <br><br>
-                            Presented insights with clear graphical visualizations using Matplotlib to communicate findings effectively.
-                        </p>
+                <aside class="hero-card" aria-label="Profile summary">
+                    <p class="hero-card-label">Current focus</p>
+                    <h2>Graduate Opportunities</h2>
+                    <p>
+                        Looking to build a career where I can combine my technical background, problem-solving skills and curiosity across software, data and emerging technologies.
+                        <br><br>
+                        I’m particularly interested in roles where I can keep learning, work with different people and apply technology to meaningful real-world problems.
+                    </p>
+
+                    <div class="hero-card-stack">
+                        <span>Software Development</span>
+                        <span>Data & AI</span>
+                        <span>Problem Solving</span>
+                        <span>User-Centred Design</span>
+                        <span>Rapid Learning</span>
+                        <span>Team Collaboration</span>
                     </div>
-
-                    
-                    <div class="segment-cell-link">
-                        <a href=https://willpeely.github.io/Data-Project>View Project</a>
-                    </div>
-                    
-                </article>
-
-                <article class="segment-cell" id="professional-website">
-
-                    <div class="segment-cell-icon">
-                        <img src="icons/web.png">
-                    </div>
-
-                    <div class="segment-cell-header">
-                        <h2>Web Development</h2>
-                    </div>
-
-                    <div class="segment-cell-description">
-                        <p>
-                            Developed a responsive multi-page courier service website using HTML, CSS, and JavaScript. 
-                            <br><br>
-                            Implemented a Node.js and Express.js backend to handle booking form submissions, improving customer communication and operational efficiency.
-                            <br><br>
-                            Enhanced user experience by using the Fetch API to asynchronously submit form data without page reloads.
-                        </p>
-                    </div>
-
-                    
-
-                    <div class="segment-cell-link">
-                        <a href=https://willpeely.github.io/sp7logistics>View Project</a>
-                    </div>
-                    
-                </article>
-
-                <article class="segment-cell" id="software-engineering">
-
-                    <div class="segment-cell-icon">
-                        <img src="icons/software.png">
-                    </div>
-
-                    <div class="segment-cell-header">
-                        <h2>Software Engineering</h2>
-                    </div>
-
-                    <div class="segment-cell-description">
-                        <p>
-                            Worked collaboratively to develop a University simulator game, following a structured software development life cycle.
-                            <br><br>
-                            Actively contributed to requirement gathering through team-led quantitative and qualitative research.
-                            <br><br>
-                            Coordinated with teammates to iteratively refine gameplay mechanics based on collective analysis of user feedback.
-                            <br><br>
-                            Maintained open communication throughout the project, resolving conflicts and aligning on technical decisions, overall achieving an 80% mark.
-
-                        </p>
-                    </div>
-                </article>
-
-                <article class="segment-cell" id="hci">
-
-                    <div class="segment-cell-icon">
-                        <img src="icons/HCI.png">
-                    </div>
-
-                    <div class="segment-cell-header">
-                        <h2>Human-Computer Interaction (HCI)</h2>
-                    </div>
-
-                    <div class="segment-cell-description">
-                        <p>
-                            Designed an student marketplace app for students to buy and sell second hand goods, using human-computer interaction methodologies.
-                            <br><br>
-                            Conducted user interviews to understand student needs, goals, and pain points.
-                            <br><br>
-                            Created personas and usage scenarios to guide design decisions, ensuring a shared understanding of target users across the team.
-                            <br><br>
-                            Developed prototypes using Figma, leading to a tangible, testable product concept.
-                            
-                            Evaluated and improved designs through usability testing and iterative feedback, increasing user satisfaction.
-                        </p>
-                    </div>
-
-                
-                </article>
-
-                <article class="segment-cell" id="unity">
-
-                    <div class="segment-cell-icon">
-                        <img src="icons/gamepad.png">
-                    </div>
-
-                    <div class="segment-cell-header">
-                        <h2>Game Development</h2>
-                    </div>
-
-                    <div class="segment-cell-description">
-                        <p>
-                            Independently designed and developed multiple game projects, managing the full lifecycle from concept and planning through iteration and delivery.
-                            <br><br>
-                            Evaluated trade-offs between creative ambition, technical feasibility, and timelines, ensuring projects stayed achievable and high-quality.
-                            <br><br>
-                            Conducted regular playtesting and user feedback analysis to inform design decisions and prioritise iteration improvements.
-                        </p>
-                    </div>
-
-                
-                </article>
+                </aside>
             </div>
         </section>
 
-        <section class="segment" id="skills">
+        <section class="section" id="projects">
+            <div class="container">
+                <header class="section-heading">
+                    <p class="eyebrow">Selected work</p>
+                    <h2>Projects</h2>
+                    <p>
+                        A selection of personal and academic projects spanning
+                        full-stack engineering, machine learning, data analysis
+                        and user-centred design.
+                    </p>
+                </header>
 
-            <header class="segment-title">
-                <h1>Skills</h1>
-                <h2>Key abilities and strengths developed through my experiences.</h2>
-            </header>
+                <article class="featured-project">
+                    <div class="featured-project-copy">
+                        <div class="project-heading">
+                            <p class="project-kicker">Featured project</p>
+                            <h3>City Explorer</h3>
+                        </div>
 
-            <div class="segment-grid" id="skills-grid">
-                <article class="segment-cell" id="techincal">
-
-                    <div class="segment-cell-icon">
-                        <img src="icons/tech.png">
-                    </div>
-
-                    <div class="segment-cell-header">
-                        <h2>Technical Versatility</h2>
-                    </div>
-
-                    <div class="segment-cell-description">
-                        <p>
-                            <span class="skill">Programming</span>
-                            <br>Competent in several lanuages including Python, C#, HTML, CSS, JavaScript, Java.
-                            <br><br>
-                            <span class="skill">Software Engineering Fundamentals</span>
-                            <br>Software development lifecycle, version control, testing, debgugging.
-                            <br><br>
-                            <span class="skill">End-to-End Development</span>
-                            <br>Design, development, testing, and implementation of software solutions.
+                        <p class="project-summary">
+                            A deployed full-stack trip-planning application that
+                            lets users search cities, discover nearby places, build
+                            an itinerary and generate an optimised walking route.
                         </p>
+
+                        <ul class="project-points">
+                            <li>
+                                Built with React, TypeScript, Vite, Leaflet,
+                                Node.js and Express.
+                            </li>
+                            <li>
+                                Integrated Geoapify for place discovery and
+                                geocoding, and OpenRouteService for walking
+                                routes and distance matrices.
+                            </li>
+                            <li>
+                                Implemented nearest-neighbour route construction
+                                with 2-opt improvement for stop-order optimisation.
+                            </li>
+                            <li>
+                                Added Zod runtime validation, centralised error
+                                handling, API timeouts, rate limiting and structured
+                                Pino logging.
+                            </li>
+                            <li>
+                                Added a 16-test Vitest/Supertest suite, GitHub
+                                Actions CI and a Dockerised backend deployed on
+                                Render, with the frontend deployed on Vercel.
+                            </li>
+                        </ul>
+
+                        <div class="tag-list" aria-label="City Explorer technologies">
+                            <span>React</span>
+                            <span>TypeScript</span>
+                            <span>Express</span>
+                            <span>Leaflet</span>
+                            <span>Docker</span>
+                            <span>Vitest</span>
+                            <span>GitHub Actions</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a
+                                class="button button-primary"
+                                href="https://city-explorer-eta-umber.vercel.app"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                Live demo
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="featured-project-visual" aria-hidden="true">
+                        <img
+                            src="images/city-explorer-1.png"
+                            alt="Preview of my city explorer project"
+                            class="featured-project-image"
+                        >
+                        <img
+                            src="images/city-explorer-2.png"
+                            alt="Preview of my city explorer project"
+                            class="featured-project-image"
+                        >
                     </div>
                 </article>
 
-                <article class="segment-cell" id="mindset">
+                <article class="featured-project">
+                    <div class="featured-project-copy">
+                        <div class="project-heading">
+                            <p class="project-kicker">Featured project</p>
+                            <h3>Final-Year Dissertation | Accessibility Research & Data Analysis</h3>
+                        </div>
 
-                    <div class="segment-cell-icon">
-                        <img src="icons/mindset.png">
-                    </div>
-
-                    <div class="segment-cell-header">
-                        <h2>Engineering Mindset</h2>
-                    </div>
-
-                    <div class="segment-cell-description">
-                        <p>
-                            <span class="skill">Problem Solving & Judgement</span>
-                            <br>Combine both creative and logical approaches backed by a strong intuition to break down complex problems.
-                            <br><br>
-                            <span class="skill">Rapid Learning</span>
-                            <br>Picking up and applying new languages, skills, and technologies quickly.
-                            <br><br>
-                            <span class="skill">Adaptability & Initiative</span>
-                            <br>Thriving under pressure and fast-paced environments, and taking ownership of tasks.
+                        <p class="project-summary">
+                            An independent mixed-methods research project investigating how
+                            accessibility features affect user interaction, performance and
+                            usability in digital games.
                         </p>
+
+                        <ul class="project-points">
+                            <li>
+                                Independently designed and carried out a structured study combining
+                                quantitative performance data with questionnaires, observations
+                                and interviews.
+                            </li>
+                            <li>
+                                Applied statistical testing, comparative analysis and correlation
+                                analysis to identify meaningful differences and behavioural trends.
+                            </li>
+                            <li>
+                                Analysed both quantitative and qualitative evidence to build a
+                                broader understanding of how users interacted with the system.
+                            </li>
+                            <li>
+                                Found that the accessibility features tested reduced input demand
+                                by approximately 85%, while improving several usability and
+                                performance measures.
+                            </li>
+                            <li>
+                                Translated the findings into clear, evidence-based conclusions,
+                                demonstrating independent research, analytical thinking and
+                                user-centred problem solving.
+                            </li>
+                        </ul>
+
+                        <div class="tag-list" aria-label="Dissertation skills and methods">
+                            <span>Data Analysis</span>
+                            <span>Statistical Testing</span>
+                            <span>User Research</span>
+                            <span>Experimental Design</span>
+                            <span>Accessibility</span>
+                            <span>Human-Computer Interaction</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a
+                                class="button button-primary"
+                                href="docs/report.pdf"
+                                download
+                            >
+                                Download Dissertation
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="featured-project-visual" aria-hidden="true">
+                        <img
+                            src="images/dissertation-1.png"
+                            alt="Preview of my final-year dissertation research"
+                            class="featured-project-image"
+                        >
+                        <img
+                            src="images/dissertation-3.png"
+                            alt="Preview of my final-year dissertation research"
+                            class="featured-project-image"
+                        >
+                        <img
+                            src="images/dissertation-2.png"
+                            alt="Preview of my final-year dissertation research"
+                            class="featured-project-image"
+                        >
                     </div>
                 </article>
 
-                <article class="segment-cell" id="collaboration">
+                <div class="project-grid">
+                    <article class="project-card">
 
-                    <div class="segment-cell-icon">
-                        <img src="icons/team.png">
-                    </div>
+                        <div class="project-heading">
+                            <p class="project-kicker">Machine Learning</p>
+                            <h3>CIFAR-10 Image Classifier</h3>
+                        </div>
 
-                    <div class="segment-cell-header">
-                        <h2>Collaboration & Leadership</h2>
-                    </div>
-
-                    <div class="segment-cell-description">
                         <p>
-                            <span class="skill">Proactivity</span>
-                            <br>Actively seek out ways to add value, anticipate challenges, and take ownership of tasks without waiting for direction.
-                            <br><br>
-                            <span class="skill">Communication</span>
-                            <br>Clearly explain ideas, share progress, and ensure mutual understanding across team members and stakeholders.
-                            <br><br>
-                            <span class="skill">Coordination</span>
-                            <br>Organise tasks, manage dependencies, and help align individual contributions toward shared goals.
+                            Built a PyTorch convolutional neural network for
+                            CIFAR-10 image classification, achieving 88% test
+                            accuracy.
                         </p>
-                    </div>
-                </article>
 
-                <article class="segment-cell" id="user-and-business">
-
-                    <div class="segment-cell-icon">
-                        <img src="icons/business.png">
-                    </div>
-
-                    <div class="segment-cell-header">
-                        <h2>User & Business Focus</h2>
-                    </div>
-
-                    <div class="segment-cell-description">
                         <p>
-                            <span class="skill">User-Centred Thinking</span>
-                            <br>Consider end users and stakeholders when designing solutions, prioritising usability, clarity, and real-world impact.
-                            <br><br>
-                            <span class="skill">Requirements Awareness</span>
-                            <br>Translate high-level goals and feedback into clear, actionable tasks that guide implementation.
-                            <br><br>
-                            <span class="skill">Value-Driven Delivery</span>
-                            <br>Focus on delivering features and outcomes that provide tangible value rather than over-engineering.
+                            Used batch normalisation, dropout, data augmentation,
+                            learning-rate scheduling and regularisation to improve
+                            generalisation.
                         </p>
-                    </div>
 
-                </article>
+                        <div class="tag-list">
+                            <span>Python</span>
+                            <span>PyTorch</span>
+                            <span>Deep Learning</span>
+                        </div>
 
+                        <a
+                            class="text-link"
+                            href="https://willpeely.github.io/Neural-Network-Classifier/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            View project <span aria-hidden="true">→</span>
+                        </a>
+                    </article>
+
+                    <article class="project-card">
+
+                        <div class="project-heading">
+                            <p class="project-kicker">Data Engineering & Analysis</p>
+                            <h3>Healthcare Data Project</h3>
+                        </div>
+
+                        <p>
+                            Cleaned and combined an NHS-style dataset using SQL
+                            and Pandas before applying predictive and clustering
+                            techniques.
+                        </p>
+
+                        <p>
+                            Built a logistic regression model with 94% accuracy
+                            and 91% recall on cancelled appointments, and used
+                            k-means clustering to group patients by health risk.
+                        </p>
+
+                        <div class="tag-list">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>SQL</span>
+                            <span>Scikit-learn</span>
+                        </div>
+
+                        <a
+                            class="text-link"
+                            href="https://willpeely.github.io/Data-Project"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            View project <span aria-hidden="true">→</span>
+                        </a>
+                    </article>
+
+                    <article class="project-card">
+
+                        <div class="project-heading">
+                            <p class="project-kicker">Web Development</p>
+                            <h3>Courier Service Website</h3>
+                        </div>
+
+                        <p>
+                            Developed a responsive multi-page courier service
+                            website with a Node.js and Express backend for booking
+                            submissions.
+                        </p>
+
+                        <p>
+                            Used the Fetch API for asynchronous form submission
+                            without page reloads, improving the booking experience.
+                        </p>
+
+                        <div class="tag-list">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                        </div>
+
+                        <a
+                            class="text-link"
+                            href="https://willpeely.github.io/sp7logistics"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            View project <span aria-hidden="true">→</span>
+                        </a>
+                    </article>
+
+                    <article class="project-card">
+
+                        <div class="project-heading">
+                            <p class="project-kicker">Team Engineering</p>
+                            <h3>University Simulator</h3>
+                        </div>
+
+                        <p>
+                            Collaborated on a university simulator game using a
+                            structured software development lifecycle.
+                        </p>
+
+                        <p>
+                            Contributed to requirements gathering, iterative
+                            refinement, user feedback analysis and technical
+                            decision-making within the team.
+                        </p>
+
+                        <div class="tag-list">
+                            <span>Teamwork</span>
+                            <span>Requirements</span>
+                            <span>Iteration</span>
+                            <span>SDLC</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+
+                        <div class="project-heading">
+                            <p class="project-kicker">Human-Computer Interaction</p>
+                            <h3>Student Marketplace</h3>
+                        </div>
+
+                        <p>
+                            Designed a marketplace concept for students to buy and
+                            sell second-hand goods using user-centred design
+                            methods.
+                        </p>
+
+                        <p>
+                            Conducted interviews, developed personas and scenarios,
+                            built Figma prototypes and iterated through usability
+                            testing.
+                        </p>
+
+                        <div class="tag-list">
+                            <span>Figma</span>
+                            <span>User Research</span>
+                            <span>Prototyping</span>
+                            <span>Usability Testing</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+
+                        <div class="project-heading">
+                            <p class="project-kicker">Game Development</p>
+                            <h3>Independent Game Projects</h3>
+                        </div>
+
+                        <p>
+                            Designed and developed multiple game projects from
+                            concept and planning through implementation, testing
+                            and delivery.
+                        </p>
+
+                        <p>
+                            Balanced scope, technical feasibility and timelines,
+                            using playtesting and feedback to prioritise iterative
+                            improvements.
+                        </p>
+
+                        <div class="tag-list">
+                            <span>C#</span>
+                            <span>Unity</span>
+                            <span>Game Design</span>
+                            <span>Playtesting</span>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <section class="segment" id="modules">
+        <section class="section section-alt" id="skills">
+            <div class="container">
+                <header class="section-heading">
+                    <p class="eyebrow">Capabilities</p>
+                    <h2>Skills</h2>
+                    <p>
+                        Technologies and engineering practices developed through
+                        academic work and independent projects.
+                    </p>
+                </header>
 
-            <header class="segment-title">
-                <h1>BEng Computer Science</h1>
-                <h2>The topics I've covered throughout my degree.</h2>
-            </header>
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <h3>Languages & Frontend</h3>
+                        <div class="skill-list">
+                            <span>TypeScript</span>
+                            <span>JavaScript</span>
+                            <span>Python</span>
+                            <span>Java</span>
+                            <span>C#</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>React</span>
+                        </div>
+                    </article>
 
-            <div class="segment-grid" id="modules-grid">
+                    <article class="skill-card">
+                        <h3>Backend & Data</h3>
+                        <div class="skill-list">
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>REST APIs</span>
+                            <span>SQL</span>
+                            <span>Pandas</span>
+                            <span>Zod</span>
+                            <span>External API Integration</span>
+                        </div>
+                    </article>
 
-                <article class="segment-cell">
-                    <div class="segment-cell-header">
-                        <p>Software</p>
-                    </div>
-                </article>
+                    <article class="skill-card">
+                        <h3>Engineering Practices</h3>
+                        <div class="skill-list">
+                            <span>Git</span>
+                            <span>GitHub Actions</span>
+                            <span>Docker</span>
+                            <span>Vitest</span>
+                            <span>Supertest</span>
+                            <span>CI/CD</span>
+                            <span>Testing</span>
+                            <span>Debugging</span>
+                        </div>
+                    </article>
 
-                <article class="segment-cell">
-                    <div class="segment-cell-header">
-                        <p>Human-Computer Interaction</p>
-                    </div>
-                </article>
-
-                <article class="segment-cell">
-                    <div class="segment-cell-header">
-                        <p>Theory</p>
-                    </div>
-                </article>
-
-                <article class="segment-cell">
-                    <div class="segment-cell-header">
-                        <p>Systems & Devices</p>
-                    </div>
-                </article>
-
-                <article class="segment-cell">
-                    <div class="segment-cell-header">
-                        <p>Machine Learning & Optimisation</p>
-                    </div>
-                </article>
-
-                <article class="segment-cell">
-                    <div class="segment-cell-header">
-                        <p>AI Search & Logic</p>
-                    </div>
-                </article>
-
-                <article class="segment-cell">
-                    <div class="segment-cell-header">
-                        <p>Deep Learning</p>
-                    </div>
-                </article>
-
-                <article class="segment-cell">
-                    <div class="segment-cell-header">
-                        <p>Data Science</p>
-                    </div>
-                </article>
-
-                <article class="segment-cell">
-                    <div class="segment-cell-header">
-                        <p>Engineering</p>
-                    </div>
-                </article>
-
-                <article class="segment-cell">
-                    <div class="segment-cell-header">
-                        <p>Autonomous Robotics</p>
-                    </div>
-                </article>
-
-                <article class="segment-cell">
-                    <div class="segment-cell-header">
-                        <p>Computer Vision & Graphics</p>
-                    </div>
-                </article>
+                    <article class="skill-card">
+                        <h3>Approach</h3>
+                        <p>
+                            I’m naturally curious, enthusiastic and quick to learn. I like getting stuck into unfamiliar problems, understanding how things work and putting full effort into what I take on. I also enjoy working with people and communicating ideas, so I’m particularly drawn to technical work that involves collaboration and real-world impact.
+                        </p>
+                    </article>
+                </div>
             </div>
+        </section>
 
+        <section class="section" id="education">
+            <div class="container">
+                <header class="section-heading">
+                    <p class="eyebrow">Education</p>
+                    <h2>Academic Background</h2>
+                    <p>
+                        A strong academic foundation across computer science,
+                        mathematics and problem solving.
+                    </p>
+                </header>
+
+                <div class="education-list">
+
+                    <article class="education-card">
+                        <div class="education-summary">
+                            <p class="education-type">Degree</p>
+                            <h3>BEng Computer Science</h3>
+                            <p class="education-place">University of York</p>
+                            <p class="education-grade">First-Class Honours</p>
+                        </div>
+
+                        <div class="education-details">
+                            <p>
+                                A broad Computer Science degree covering software development,
+                                data, artificial intelligence, machine learning, interaction
+                                and core theoretical foundations.
+                            </p>
+
+                            <div class="module-list" aria-label="Selected university modules">
+                                <span>Software Engineering</span>
+                                <span>Human-Computer Interaction</span>
+                                <span>Machine Learning & Optimisation</span>
+                                <span>Artificial Intelligence</span>
+                                <span>Deep Learning</span>
+                                <span>Data Science</span>
+                                <span>Autonomous Robotics</span>
+                                <span>Computer Vision & Graphics</span>
+                                <span>Systems & Devices</span>
+                                <span>Computer Science Theory</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="education-card education-card-secondary">
+                        <div class="education-summary">
+                            <p class="education-type">A-Levels</p>
+                            <h3>Hills Road Sixth Form College</h3>
+                            <p class="education-grade">A*AAA</p>
+                        </div>
+
+                        <div class="education-details">
+                            <p>
+                                Studied a technical combination of mathematics, computing
+                                and physics, developing a strong foundation in analytical
+                                thinking and problem solving.
+                            </p>
+
+                            <div class="module-list" aria-label="A-Level subjects">
+                                <span>Mathematics</span>
+                                <span>Further Mathematics</span>
+                                <span>Computer Science</span>
+                                <span>Physics</span>
+                            </div>
+
+                            <div class="education-highlight">
+                                <div>
+                                    <p class="education-highlight-label">Extended Project Qualification</p>
+                                    <h4>Robotic Desk Companion</h4>
+                                </div>
+
+                                <span class="education-highlight-grade">Grade A</span>
+
+                                <p>
+                                    Independently researched, designed, documented and built
+                                    a robotic desk companion, combining technical development
+                                    with self-directed research and project management.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="container contact-card">
+                <div>
+                    <p class="eyebrow">Get in touch</p>
+                    <h2>Interested in working together?</h2>
+                    <p>
+                        I’m currently exploring graduate opportunities across software, data, AI and technology. I’m always happy to discuss interesting projects, technical challenges and opportunities to learn.
+                    </p>
+                </div>
+
+                <div class="contact-actions">
+                    <a
+                        class="button button-primary"
+                        href="mailto:william.e.peel@gmail.com"
+                    >
+                        Email me
+                    </a>
+                    <a
+                        class="button button-secondary"
+                        href="https://www.linkedin.com/in/-william-peel-"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <p>
-                <a href="mailto:william.e.peel@gmail.com">william.e.peel@gmail.com</a> |
-                <a href="https://github.com/willpeely" target="_blank">GitHub</a> |
-                <a href="https://www.linkedin.com/in/-william-peel-" target="_blank">LinkedIn</a>
-            </p>
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© William Peel</p>
+
+            <div class="footer-links">
+                <a href="mailto:william.e.peel@gmail.com">Email</a>
+                <a
+                    href="https://github.com/willpeely"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    GitHub
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/-william-peel-"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    LinkedIn
+                </a>
+            </div>
         </div>
     </footer>
-
-    
 </body>
 </html>

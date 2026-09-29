@@ -1,3 +1,9 @@
-# Portfolio - https://willpeely.github.io/Portfolio/
+# Portfolio
 
-This portfolio outlines my projects and skills into one simple place, giving you the opportunity to learn about the things I've done, and what I can bring to the table.
+A personal portfolio showcasing my software engineering projects, technical skills, and experience.
+
+The site brings together my work across full-stack development, machine learning, data engineering, software engineering, and user-centred design in one place.
+
+## Live Site
+
+[View Portfolio](https://willpeely.github.io/Portfolio/)
